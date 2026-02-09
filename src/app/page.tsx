@@ -1,11 +1,12 @@
 import Card from "@/components/Card";
+import Category from "@/components/Home/Category";
 import { ArrowRight, Section, Shield, Truck, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="space-y-16 pb-16">
+    <main className="pb-16">
       {/* hero section  */}
       <section className="w-full bg-linear-to-r from-gray-200 to-white dark:bg-linear-to-r dark:from-black/60 dark:to-black">
         <div className="max-w-7xl mx-auto px-6 py-24 sm:py-32 lg:px-12">
@@ -50,23 +51,40 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="max-w-8/12 grid md:grid-cols-3 gap-8 mx-auto px-5">
+      <div className="grid md:grid-cols-3 gap-8 px-8 py-8 dark:bg-black">
         <Card
           variant="feature"
           icon={Truck}
           title="Free Shipping"
-          description="Free delivery on orders over $100" />
-        <Card 
-        variant="feature"
-        icon={Shield}
-        title="2-Years Warranty"
-        description="Extended warranty on all products" />
-        <Card 
-        variant="feature"
-        icon={Zap}
-        title="Fast Performance"
-        description="Latest technology for maximum speed" />
+          description="Free delivery on orders over $100"
+        />
+
+        <Card
+          variant="feature"
+          icon={Shield}
+          title="2-Years Warranty"
+          description="Extended warranty on all products"
+        />
+
+        <Card
+          variant="feature"
+          icon={Zap}
+          title="Fast Performance"
+          description="Latest technology for maximum speed"
+        />
       </div>
+
+
+
+      {/* category  */}
+
+      <section className="dark:bg-black py-3 px-6 space-y-3">
+        <h2 className="dark:text-white text-center py-4 text-2xl sm:text-3xl lg:text-5xl font-semibold">Shop by Category</h2>
+        <p className="text-gray-400 text-center">
+          Find exctly what you need for your build
+        </p>
+        <Category />
+      </section>
     </main>
   );
 }
