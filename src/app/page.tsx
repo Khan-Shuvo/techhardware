@@ -1,7 +1,7 @@
 import Card from "@/components/Card";
 import Category from "@/components/Home/Category";
+import FeaturedProducts from "@/components/Home/FeaturedProducts";
 import { ArrowRight, Section, Shield, Truck, Zap } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -86,6 +86,29 @@ export default function Home() {
         <Category />
       </section>
 
+      
+      {/* Fetured section  */}
+      <section className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between mb-10">
+          <div>
+            <h2 className="text-3xl font-bold mb-2">Featured Products</h2>
+            <p className="text-muted-foreground">
+              Hand-picked selection of our best products
+            </p>
+          </div>
+          <Link href={'/shop'}>
+            <button className="flex items-center justify-center gap-2 bg-white py-2 px-2 text-black rounded-md hover:bg-gray-300 hover:transition hover:duration-300 hover:scale-105">
+              View all
+              <ArrowRight size={18} />
+            </button>
+          </Link>
+        </div>
+
+        <div className="py-6">
+          <FeaturedProducts />
+        </div>
+      </section>
+
       <section className=" text-center py-20 px-4 flex flex-col items-center justify-center gap-3  bg-linear-to-r from-gray-200 to-white dark:bg-linear-to-r dark:from-gray-800 dark:to-black">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 dark:text-white">
           Ready to Build ?
@@ -95,7 +118,7 @@ export default function Home() {
         </p>
         <button className="flex items-center justify-center gap-2 bg-black py-2 px-2 text-white rounded-md dark:bg-white dark:text-black">
           Explore All Products
-          <ArrowRight size={18}/>
+          <ArrowRight size={18} />
         </button>
       </section>
     </main>
