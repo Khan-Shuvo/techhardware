@@ -78,12 +78,25 @@ export default function Home() {
 
       {/* category  */}
 
-      <section className="dark:bg-black py-3 px-6 space-y-3">
+      <section className="dark:bg-black pt-3 pb-10 px-6 space-y-3">
         <h2 className="dark:text-white text-center py-4 text-2xl sm:text-3xl lg:text-5xl font-semibold">Shop by Category</h2>
         <p className="text-gray-400 text-center">
           Find exctly what you need for your build
         </p>
         <Category />
+      </section>
+
+      <section className=" text-center py-20 px-4 flex flex-col items-center justify-center gap-3  bg-linear-to-r from-gray-200 to-white dark:bg-linear-to-r dark:from-gray-800 dark:to-black">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 dark:text-white">
+          Ready to Build ?
+        </h2>
+        <p className=" max-w-2xl text-gray-500 text-lg md:text-lg mb-8 dark:text-gray-300">
+          Browse our complete catalog of hardware components and start building your dream PC today.
+        </p>
+        <button className="flex items-center justify-center gap-2 bg-black py-2 px-2 text-white rounded-md dark:bg-white dark:text-black">
+          Explore All Products
+          <ArrowRight size={18}/>
+        </button>
       </section>
     </main>
   );
