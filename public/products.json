@@ -1,0 +1,778 @@
+[
+  {
+    "id": "1",
+    "name": "NVIDIA GeForce RTX 4090",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800",
+    "category": "Graphics Cards",
+    "brand": "NVIDIA",
+    "price": 1599.99,
+    "stock": 15,
+    "rating": 4.9,
+    "description": "The ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics. Experience ultra-high performance gaming, incredibly detailed virtual worlds with ray tracing, unprecedented productivity, and new ways to create.",
+    "specs": {
+      "Memory": "24GB GDDR6X",
+      "Boost Clock": "2.52 GHz",
+      "CUDA Cores": "16384",
+      "Power": "450W"
+    },
+    "featured": true
+  },
+  {
+    "id": "2",
+    "name": "AMD Radeon RX 7900 XTX",
+    "image": "https://images.unsplash.com/photo-1587202372583-49330a15584d?w=800",
+    "category": "Graphics Cards",
+    "brand": "AMD",
+    "price": 999.99,
+    "stock": 20,
+    "rating": 4.7,
+    "description": "Built on advanced AMD RDNA 3 architecture, the Radeon RX 7900 XTX graphics card delivers exceptional performance for gaming and content creation at ultra-high resolutions.",
+    "specs": {
+      "Memory": "24GB GDDR6",
+      "Boost Clock": "2.5 GHz",
+      "Stream Processors": "6144",
+      "Power": "355W"
+    },
+    "featured": true
+  },
+  {
+    "id": "3",
+    "name": "NVIDIA GeForce RTX 4080",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Graphics Cards",
+    "brand": "NVIDIA",
+    "price": 1199.99,
+    "stock": 12,
+    "rating": 4.8,
+    "description": "Experience unrivaled gaming and creating with the GeForce RTX 4080. Powered by the ultra-efficient NVIDIA Ada Lovelace architecture.",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Boost Clock": "2.51 GHz",
+      "CUDA Cores": "9728",
+      "Power": "320W"
+    }
+  },
+  {
+    "id": "4",
+    "name": "AMD Radeon RX 7800 XT",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Graphics Cards",
+    "brand": "AMD",
+    "price": 499.99,
+    "stock": 25,
+    "rating": 4.6,
+    "description": "Experience exceptional 1440p gaming performance with the AMD Radeon RX 7800 XT graphics card, powered by AMD RDNA 3 architecture.",
+    "specs": {
+      "Memory": "16GB GDDR6",
+      "Boost Clock": "2.43 GHz",
+      "Stream Processors": "3840",
+      "Power": "263W"
+    }
+  },
+  {
+    "id": "5",
+    "name": "NVIDIA GeForce RTX 4070 Ti",
+    "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=800",
+    "category": "Graphics Cards",
+    "brand": "NVIDIA",
+    "price": 799.99,
+    "stock": 18,
+    "rating": 4.7,
+    "description": "Get a quantum leap in performance in games and creative apps with the GeForce RTX 4070 Ti.",
+    "specs": {
+      "Memory": "12GB GDDR6X",
+      "Boost Clock": "2.61 GHz",
+      "CUDA Cores": "7680",
+      "Power": "285W"
+    }
+  },
+  {
+    "id": "6",
+    "name": "AMD Radeon RX 7700 XT",
+    "image": "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=800",
+    "category": "Graphics Cards",
+    "brand": "AMD",
+    "price": 449.99,
+    "stock": 22,
+    "rating": 4.5,
+    "description": "Dominate your games at 1440p with the AMD Radeon RX 7700 XT graphics card, featuring cutting-edge AMD RDNA 3 architecture.",
+    "specs": {
+      "Memory": "12GB GDDR6",
+      "Boost Clock": "2.54 GHz",
+      "Stream Processors": "3456",
+      "Power": "245W"
+    }
+  },
+  {
+    "id": "7",
+    "name": "NVIDIA GeForce RTX 4060 Ti",
+    "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800",
+    "category": "Graphics Cards",
+    "brand": "NVIDIA",
+    "price": 399.99,
+    "stock": 30,
+    "rating": 4.4,
+    "description": "Experience the latest games at 1080p with all the bells and whistles, thanks to the GeForce RTX 4060 Ti.",
+    "specs": {
+      "Memory": "8GB GDDR6",
+      "Boost Clock": "2.54 GHz",
+      "CUDA Cores": "4352",
+      "Power": "160W"
+    }
+  },
+  {
+    "id": "8",
+    "name": "AMD Radeon RX 7600",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800",
+    "category": "Graphics Cards",
+    "brand": "AMD",
+    "price": 269.99,
+    "stock": 35,
+    "rating": 4.3,
+    "description": "Enjoy exceptional 1080p gaming and streaming with the AMD Radeon RX 7600, built on the advanced RDNA 3 architecture.",
+    "specs": {
+      "Memory": "8GB GDDR6",
+      "Boost Clock": "2.66 GHz",
+      "Stream Processors": "2048",
+      "Power": "165W"
+    }
+  },
+  {
+    "id": "9",
+    "name": "AMD Ryzen 9 7950X",
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800",
+    "category": "Processors",
+    "brand": "AMD",
+    "price": 549.99,
+    "stock": 18,
+    "rating": 4.9,
+    "description": "Ultimate desktop processor for gaming and creating. 16 cores and 32 threads deliver exceptional performance for the most demanding workloads.",
+    "specs": {
+      "Cores": "16",
+      "Threads": "32",
+      "Base Clock": "4.5 GHz",
+      "Boost Clock": "5.7 GHz",
+      "TDP": "170W"
+    },
+    "featured": true
+  },
+  {
+    "id": "10",
+    "name": "Intel Core i9-14900K",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Processors",
+    "brand": "Intel",
+    "price": 589.99,
+    "stock": 15,
+    "rating": 4.8,
+    "description": "Intel's flagship processor delivering extraordinary gaming and multitasking performance with 24 cores and 32 threads.",
+    "specs": {
+      "Cores": "24 (8P+16E)",
+      "Threads": "32",
+      "Base Clock": "3.2 GHz",
+      "Boost Clock": "6.0 GHz",
+      "TDP": "125W"
+    },
+    "featured": true
+  },
+  {
+    "id": "11",
+    "name": "AMD Ryzen 7 7800X3D",
+    "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800",
+    "category": "Processors",
+    "brand": "AMD",
+    "price": 449.99,
+    "stock": 20,
+    "rating": 4.9,
+    "description": "The ultimate gaming processor with AMD 3D V-Cache technology, delivering exceptional gaming performance.",
+    "specs": {
+      "Cores": "8",
+      "Threads": "16",
+      "Base Clock": "4.2 GHz",
+      "Boost Clock": "5.0 GHz",
+      "TDP": "120W"
+    }
+  },
+  {
+    "id": "12",
+    "name": "Intel Core i7-14700K",
+    "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=800",
+    "category": "Processors",
+    "brand": "Intel",
+    "price": 409.99,
+    "stock": 25,
+    "rating": 4.7,
+    "description": "High-performance processor for gaming and content creation with 20 cores and 28 threads.",
+    "specs": {
+      "Cores": "20 (8P+12E)",
+      "Threads": "28",
+      "Base Clock": "3.4 GHz",
+      "Boost Clock": "5.6 GHz",
+      "TDP": "125W"
+    }
+  },
+  {
+    "id": "13",
+    "name": "AMD Ryzen 5 7600X",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Processors",
+    "brand": "AMD",
+    "price": 229.99,
+    "stock": 30,
+    "rating": 4.6,
+    "description": "Exceptional gaming performance with 6 cores and 12 threads, perfect for mainstream gaming PCs.",
+    "specs": {
+      "Cores": "6",
+      "Threads": "12",
+      "Base Clock": "4.7 GHz",
+      "Boost Clock": "5.3 GHz",
+      "TDP": "105W"
+    }
+  },
+  {
+    "id": "14",
+    "name": "Intel Core i5-14600K",
+    "image": "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=800",
+    "category": "Processors",
+    "brand": "Intel",
+    "price": 319.99,
+    "stock": 28,
+    "rating": 4.6,
+    "description": "Mainstream performance powerhouse with 14 cores and 20 threads for gaming and productivity.",
+    "specs": {
+      "Cores": "14 (6P+8E)",
+      "Threads": "20",
+      "Base Clock": "3.5 GHz",
+      "Boost Clock": "5.3 GHz",
+      "TDP": "125W"
+    }
+  },
+  {
+    "id": "15",
+    "name": "ASUS ROG Crosshair X670E Hero",
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "price": 699.99,
+    "stock": 10,
+    "rating": 4.8,
+    "description": "Premium AMD X670E motherboard with PCIe 5.0, DDR5 support, and extensive connectivity options.",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "X670E",
+      "Memory": "DDR5",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "16",
+    "name": "MSI MPG Z790 Carbon WiFi",
+    "image": "https://images.unsplash.com/photo-1587202372583-49330a15584d?w=800",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "price": 449.99,
+    "stock": 12,
+    "rating": 4.7,
+    "description": "High-end Intel Z790 motherboard featuring PCIe 5.0, DDR5, and premium components.",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "Z790",
+      "Memory": "DDR5",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "17",
+    "name": "GIGABYTE B650 AORUS Elite",
+    "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800",
+    "category": "Motherboards",
+    "brand": "GIGABYTE",
+    "price": 249.99,
+    "stock": 18,
+    "rating": 4.5,
+    "description": "Excellent value AMD B650 motherboard with DDR5 support and solid feature set.",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "B650",
+      "Memory": "DDR5",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "18",
+    "name": "ASRock B760M Steel Legend",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Motherboards",
+    "brand": "ASRock",
+    "price": 159.99,
+    "stock": 20,
+    "rating": 4.4,
+    "description": "Budget-friendly Intel B760 micro-ATX motherboard with DDR5 support.",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "B760",
+      "Memory": "DDR5",
+      "Form Factor": "Micro-ATX"
+    }
+  },
+  {
+    "id": "19",
+    "name": "ASUS TUF Gaming X670E-Plus",
+    "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=800",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "price": 329.99,
+    "stock": 15,
+    "rating": 4.6,
+    "description": "Durable AMD X670E motherboard with military-grade components and excellent thermal design.",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "X670E",
+      "Memory": "DDR5",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "20",
+    "name": "Corsair Dominator Platinum RGB 32GB DDR5",
+    "image": "https://images.unsplash.com/photo-1541329465229-8e7eb4817a3f?w=800",
+    "category": "Memory (RAM)",
+    "brand": "Corsair",
+    "price": 189.99,
+    "stock": 40,
+    "rating": 4.8,
+    "description": "Premium DDR5 memory with stunning RGB lighting and exceptional performance.",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "6000MHz",
+      "Type": "DDR5",
+      "Latency": "CL36"
+    }
+  },
+  {
+    "id": "21",
+    "name": "G.Skill Trident Z5 RGB 32GB DDR5",
+    "image": "https://images.unsplash.com/photo-1562976540-1502c2145186?w=800",
+    "category": "Memory (RAM)",
+    "brand": "G.Skill",
+    "price": 169.99,
+    "stock": 35,
+    "rating": 4.7,
+    "description": "High-performance DDR5 memory kit with customizable RGB lighting.",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "6400MHz",
+      "Type": "DDR5",
+      "Latency": "CL32"
+    }
+  },
+  {
+    "id": "22",
+    "name": "Kingston Fury Beast 64GB DDR5",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800",
+    "category": "Memory (RAM)",
+    "brand": "Kingston",
+    "price": 249.99,
+    "stock": 25,
+    "rating": 4.6,
+    "description": "High-capacity DDR5 memory for demanding workloads and multitasking.",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "5600MHz",
+      "Type": "DDR5",
+      "Latency": "CL40"
+    }
+  },
+  {
+    "id": "23",
+    "name": "Corsair Vengeance 32GB DDR4",
+    "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800",
+    "category": "Memory (RAM)",
+    "brand": "Corsair",
+    "price": 89.99,
+    "stock": 50,
+    "rating": 4.7,
+    "description": "Reliable DDR4 memory with excellent compatibility and performance.",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "3600MHz",
+      "Type": "DDR4",
+      "Latency": "CL18"
+    }
+  },
+  {
+    "id": "24",
+    "name": "Crucial Ballistix 16GB DDR4",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Memory (RAM)",
+    "brand": "Crucial",
+    "price": 54.99,
+    "stock": 60,
+    "rating": 4.5,
+    "description": "Great value DDR4 memory for mainstream gaming builds.",
+    "specs": {
+      "Capacity": "16GB (2x8GB)",
+      "Speed": "3200MHz",
+      "Type": "DDR4",
+      "Latency": "CL16"
+    }
+  },
+  {
+    "id": "25",
+    "name": "G.Skill Ripjaws V 64GB DDR4",
+    "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=800",
+    "category": "Memory (RAM)",
+    "brand": "G.Skill",
+    "price": 159.99,
+    "stock": 30,
+    "rating": 4.6,
+    "description": "High-capacity DDR4 memory kit for content creators and power users.",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "3600MHz",
+      "Type": "DDR4",
+      "Latency": "CL18"
+    }
+  },
+  {
+    "id": "26",
+    "name": "Samsung 990 PRO 2TB NVMe SSD",
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800",
+    "category": "Storage",
+    "brand": "Samsung",
+    "price": 189.99,
+    "stock": 45,
+    "rating": 4.9,
+    "description": "Flagship PCIe 4.0 NVMe SSD with exceptional speed and reliability.",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7450 MB/s",
+      "Write Speed": "6900 MB/s"
+    },
+    "featured": true
+  },
+  {
+    "id": "27",
+    "name": "WD Black SN850X 1TB NVMe SSD",
+    "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=800",
+    "category": "Storage",
+    "brand": "Western Digital",
+    "price": 109.99,
+    "stock": 50,
+    "rating": 4.8,
+    "description": "High-performance gaming SSD with excellent speeds and endurance.",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7300 MB/s",
+      "Write Speed": "6300 MB/s"
+    }
+  },
+  {
+    "id": "28",
+    "name": "Crucial P5 Plus 2TB NVMe SSD",
+    "image": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?w=800",
+    "category": "Storage",
+    "brand": "Crucial",
+    "price": 149.99,
+    "stock": 40,
+    "rating": 4.7,
+    "description": "Great value PCIe 4.0 SSD with solid performance for gaming and productivity.",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "6600 MB/s",
+      "Write Speed": "5000 MB/s"
+    }
+  },
+  {
+    "id": "29",
+    "name": "Seagate FireCuda 530 1TB NVMe SSD",
+    "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800",
+    "category": "Storage",
+    "brand": "Seagate",
+    "price": 119.99,
+    "stock": 35,
+    "rating": 4.7,
+    "description": "Premium PCIe 4.0 SSD designed for high-performance gaming.",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7300 MB/s",
+      "Write Speed": "6000 MB/s"
+    }
+  },
+  {
+    "id": "30",
+    "name": "Samsung 870 EVO 2TB SATA SSD",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Storage",
+    "brand": "Samsung",
+    "price": 149.99,
+    "stock": 55,
+    "rating": 4.8,
+    "description": "Reliable SATA SSD with excellent performance and compatibility.",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "SATA III",
+      "Read Speed": "560 MB/s",
+      "Write Speed": "530 MB/s"
+    }
+  },
+  {
+    "id": "31",
+    "name": "WD Blue 4TB HDD",
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800",
+    "category": "Storage",
+    "brand": "Western Digital",
+    "price": 79.99,
+    "stock": 60,
+    "rating": 4.5,
+    "description": "High-capacity hard drive for mass storage needs.",
+    "specs": {
+      "Capacity": "4TB",
+      "Interface": "SATA III",
+      "RPM": "5400",
+      "Cache": "256MB"
+    }
+  },
+  {
+    "id": "32",
+    "name": "Seagate Barracuda 8TB HDD",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Storage",
+    "brand": "Seagate",
+    "price": 139.99,
+    "stock": 40,
+    "rating": 4.6,
+    "description": "Massive storage capacity for backup and archival purposes.",
+    "specs": {
+      "Capacity": "8TB",
+      "Interface": "SATA III",
+      "RPM": "5400",
+      "Cache": "256MB"
+    }
+  },
+  {
+    "id": "33",
+    "name": "Corsair RM1000x 1000W 80+ Gold",
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800",
+    "category": "Power Supplies",
+    "brand": "Corsair",
+    "price": 179.99,
+    "stock": 20,
+    "rating": 4.8,
+    "description": "Fully modular power supply with 80 PLUS Gold certification and silent operation.",
+    "specs": {
+      "Wattage": "1000W",
+      "Efficiency": "80+ Gold",
+      "Modular": "Fully Modular",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "34",
+    "name": "EVGA SuperNOVA 850W 80+ Platinum",
+    "image": "https://images.unsplash.com/photo-1587202372583-49330a15584d?w=800",
+    "category": "Power Supplies",
+    "brand": "EVGA",
+    "price": 149.99,
+    "stock": 25,
+    "rating": 4.7,
+    "description": "High-efficiency power supply with 80 PLUS Platinum rating and 10-year warranty.",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80+ Platinum",
+      "Modular": "Fully Modular",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "35",
+    "name": "Seasonic Focus GX-750 750W 80+ Gold",
+    "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800",
+    "category": "Power Supplies",
+    "brand": "Seasonic",
+    "price": 119.99,
+    "stock": 30,
+    "rating": 4.8,
+    "description": "Premium power supply with excellent ripple suppression and silent fan.",
+    "specs": {
+      "Wattage": "750W",
+      "Efficiency": "80+ Gold",
+      "Modular": "Fully Modular",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "36",
+    "name": "Thermaltake Toughpower 650W 80+ Bronze",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Power Supplies",
+    "brand": "Thermaltake",
+    "price": 69.99,
+    "stock": 40,
+    "rating": 4.5,
+    "description": "Reliable power supply with 80 PLUS Bronze certification at an affordable price.",
+    "specs": {
+      "Wattage": "650W",
+      "Efficiency": "80+ Bronze",
+      "Modular": "Semi-Modular",
+      "Form Factor": "ATX"
+    }
+  },
+  {
+    "id": "37",
+    "name": "Lian Li O11 Dynamic EVO",
+    "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800",
+    "category": "Cases",
+    "brand": "Lian Li",
+    "price": 169.99,
+    "stock": 15,
+    "rating": 4.9,
+    "description": "Premium mid-tower case with excellent airflow and stunning aesthetics.",
+    "specs": {
+      "Form Factor": "Mid-Tower",
+      "Material": "Aluminum/Tempered Glass",
+      "Max GPU Length": "420mm",
+      "Fans Included": "0"
+    }
+  },
+  {
+    "id": "38",
+    "name": "NZXT H7 Flow",
+    "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=800",
+    "category": "Cases",
+    "brand": "NZXT",
+    "price": 129.99,
+    "stock": 20,
+    "rating": 4.7,
+    "description": "High-airflow case with clean design and easy cable management.",
+    "specs": {
+      "Form Factor": "Mid-Tower",
+      "Material": "Steel/Tempered Glass",
+      "Max GPU Length": "400mm",
+      "Fans Included": "2"
+    }
+  },
+  {
+    "id": "39",
+    "name": "Fractal Design Meshify 2",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Cases",
+    "brand": "Fractal Design",
+    "price": 149.99,
+    "stock": 18,
+    "rating": 4.8,
+    "description": "Compact mid-tower with iconic mesh front and excellent cooling potential.",
+    "specs": {
+      "Form Factor": "Mid-Tower",
+      "Material": "Steel/Tempered Glass",
+      "Max GPU Length": "360mm",
+      "Fans Included": "3"
+    }
+  },
+  {
+    "id": "40",
+    "name": "Corsair 4000D Airflow",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Cases",
+    "brand": "Corsair",
+    "price": 104.99,
+    "stock": 25,
+    "rating": 4.6,
+    "description": "Budget-friendly airflow case with great build quality and features.",
+    "specs": {
+      "Form Factor": "Mid-Tower",
+      "Material": "Steel/Tempered Glass",
+      "Max GPU Length": "360mm",
+      "Fans Included": "2"
+    }
+  },
+  {
+    "id": "41",
+    "name": "Noctua NH-D15 CPU Cooler",
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800",
+    "category": "Cooling",
+    "brand": "Noctua",
+    "price": 109.99,
+    "stock": 30,
+    "rating": 4.9,
+    "description": "Premium dual-tower air cooler with exceptional cooling performance and silent operation.",
+    "specs": {
+      "Type": "Air Cooler",
+      "Height": "165mm",
+      "Fans": "2x 140mm",
+      "TDP": "250W"
+    }
+  },
+  {
+    "id": "42",
+    "name": "Corsair iCUE H150i Elite LCD",
+    "image": "https://images.unsplash.com/photo-1587202372583-49330a15584d?w=800",
+    "category": "Cooling",
+    "brand": "Corsair",
+    "price": 289.99,
+    "stock": 20,
+    "rating": 4.8,
+    "description": "Premium 360mm AIO with customizable LCD screen and RGB lighting.",
+    "specs": {
+      "Type": "AIO Liquid Cooler",
+      "Radiator": "360mm",
+      "Fans": "3x 120mm",
+      "RGB": "Yes"
+    }
+  },
+  {
+    "id": "43",
+    "name": "Arctic Liquid Freezer II 280",
+    "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800",
+    "category": "Cooling",
+    "brand": "Arctic",
+    "price": 119.99,
+    "stock": 25,
+    "rating": 4.7,
+    "description": "High-performance 280mm AIO cooler with excellent price-to-performance ratio.",
+    "specs": {
+      "Type": "AIO Liquid Cooler",
+      "Radiator": "280mm",
+      "Fans": "2x 140mm",
+      "RGB": "No"
+    }
+  },
+  {
+    "id": "44",
+    "name": "be quiet! Dark Rock Pro 4",
+    "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
+    "category": "Cooling",
+    "brand": "be quiet!",
+    "price": 89.99,
+    "stock": 35,
+    "rating": 4.7,
+    "description": "Silent dual-tower air cooler with excellent thermal performance.",
+    "specs": {
+      "Type": "Air Cooler",
+      "Height": "163mm",
+      "Fans": "2x 135mm/120mm",
+      "TDP": "250W"
+    }
+  },
+  {
+    "id": "45",
+    "name": "NZXT Kraken X63",
+    "image": "https://images.unsplash.com/photo-1602492933969-679fbb31b745?w=800",
+    "category": "Cooling",
+    "brand": "NZXT",
+    "price": 149.99,
+    "stock": 22,
+    "rating": 4.6,
+    "description": "280mm AIO liquid cooler with customizable RGB pump head and CAM software.",
+    "specs": {
+      "Type": "AIO Liquid Cooler",
+      "Radiator": "280mm",
+      "Fans": "2x 140mm",
+      "RGB": "Yes"
+    }
+  }
+]
