@@ -5,9 +5,8 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 import { categories as initialCategories } from "@/components/Home/Category";
 
 type ProductContextType = {
-    products: Product[];
+    allProduct: Product[];
     categories: Category[];
-    loading: boolean; 
     addProduct: (product: Product) => void;
     updateProduct: (productId: string, updatedProduct: Product) => void;
     deleteProduct: (productId: string) => void;
@@ -21,35 +20,17 @@ const ProductContext = createContext<ProductContextType | undefined>(undefined);
 export const ProductProvider = ({ children }: { children: ReactNode }) => {
     const [products, setProducts] = useState<Product[]>([]);
     const [categories] = useState<Category[]>(initialCategories);
-    const [loading, setLoading] = useState(true);
+    const [allProduct, setAllProduct] = useState<Product[]>([])
 
     useEffect(() => {
-        const loadData = async () => {
-            try {
-                const savedProducts = localStorage.getItem('hardware-shop-products');
-                
-                if (savedProducts && savedProducts !== "[]") {
-                    setProducts(JSON.parse(savedProducts));
-                } else {
-                    const res = await fetch("/products.json");
-                    const data = await res.json();
-                    setProducts(data);
-                }
-            } catch (error) {
-                console.error("Error initializing products:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        loadData();
-    }, []);
-
-    useEffect(() => {
-        if (!loading) {
-            localStorage.setItem('hardware-shop-products', JSON.stringify(products));
+        const fetchAllData = async () => {
+            const res = await fetch('/products.json');
+            const data = await res.json()
+            setAllProduct(data)
         }
-    }, [products, loading]);
+        fetchAllData()
+
+    }, [])
 
     const addProduct = (product: Product) => {
         setProducts((prev) => [...prev, product]);
@@ -74,15 +55,14 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
     };
 
     const getFeaturedProducts = (): Product[] => {
-        return products.filter((product) => product.featured === true);
+        return allProduct.filter((product) => product.featured === true);
     };
 
     return (
         <ProductContext.Provider
             value={{
-                products,
+                allProduct,
                 categories,
-                loading,
                 addProduct,
                 updateProduct,
                 deleteProduct,
