@@ -24,7 +24,7 @@ export default function Category() {
   return (
     <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3'>
       {categories.map(item => (
-        <Link href={'/shop'} key={item.id} className='hover:-translate-y-1.5 transition-transform duration-300' >
+        <Link href={`/shop?category=${item.slug}`} key={item.id} className='hover:-translate-y-1.5 transition-transform duration-300' >
           <Card key={item.id} variant='category' title={item.name} icon={item.icon} count={item.productCount} />
         </Link>
       ))}
