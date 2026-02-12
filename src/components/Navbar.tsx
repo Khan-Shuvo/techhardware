@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Home,
   Moon,
@@ -30,6 +30,8 @@ export default function Navbar() {
     { name: "Shop", href: "/shop", icon: Store },
     { name: "Cart", href: "/cart", icon: ShoppingCart },
   ];
+
+  const router = useRouter()
 
   return (
     <nav className="relative">
@@ -71,7 +73,8 @@ export default function Navbar() {
               </button>
             </>
           ) : (
-            <button className="px-3 py-2 bg-black text-white rounded-lg">
+            <button className="px-3 py-2 bg-black text-white rounded-lg"
+            onClick={()=> router.push('/signin')}>
               <LogIn size={18} />
             </button>
           )}
