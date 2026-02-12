@@ -3,8 +3,10 @@
 import Image from "next/image"
 import { ShoppingCart, Eye, Star } from "lucide-react"
 import { ProductCardProps } from "@/types/Type"
+import { useRouter } from "next/navigation"
 
 export default function ProductCard({
+    id,
     brand,
     name,
     image,
@@ -14,6 +16,8 @@ export default function ProductCard({
     featured,
     onAddToCart
 }: ProductCardProps) {
+
+    const router = useRouter()
 
     return (
         <div className="group relative w-full max-w-70 sm:max-w-60 md:max-w-70 rounded-2xl border bg-white dark:bg-zinc-900 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
@@ -29,6 +33,7 @@ export default function ProductCard({
                     src={image}
                     alt={name}
                     fill
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 25vw "
                     className="object-cover group-hover:scale-105 transition duration-300"
                 />
             </div>
@@ -66,7 +71,8 @@ export default function ProductCard({
                         Add to Cart
                     </button>
 
-                    <button className="p-2 rounded-xl border hover:bg-gray-100 dark:hover:bg-zinc-800">
+                    <button className="p-2 rounded-xl border hover:bg-gray-100 dark:hover:bg-zinc-800"
+                    onClick={() => router.push(`product/${id}`)}>
                         <Eye size={18} />
                     </button>
                 </div>
