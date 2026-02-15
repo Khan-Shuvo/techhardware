@@ -33,3 +33,10 @@ export type ProductCardProps = {
   featured?: boolean
   onAddToCart?: () => void
 }
+
+export type user = {
+    name: string;
+    email: string;
+    password: string;
+    address?: string
+}
