@@ -25,6 +25,10 @@ export default function SignUpPage() {
             placeholder="••••••••"
           />
 
+          <AuthInput
+          label="Address"
+          placeholder="Address" />
+
           <button
             className="
               bg-black text-white
