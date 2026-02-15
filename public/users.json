@@ -1,0 +1,38 @@
+[
+    {
+        "name": "shuvo",
+        "email": "shuvo@email.com",
+        "password": "123456",
+        "address": "Dhaka Bangladesh"
+    },
+    {
+        "name": "Arif Ahmed",
+        "email": "arif.a@example.com",
+        "password": "password789",
+        "address": "Chittagong, Bangladesh"
+    },
+    {
+        "name": "Sarah Jenkins",
+        "email": "sarah.j@webmail.org",
+        "password": "securePass!23",
+        "address": "London, UK"
+    },
+    {
+        "name": "Tanaka Yuki",
+        "email": "yuki.t@provider.net",
+        "password": "yuki_secret_00",
+        "address": "Tokyo, Japan"
+    },
+    {
+        "name": "Maria Garcia",
+        "email": "m.garcia@service.com",
+        "password": "mypassword2024",
+        "address": "Madrid, Spain"
+    },
+    {
+        "name": "Liam O'Connor",
+        "email": "liam.oc@domain.com",
+        "password": "hidden_key_44",
+        "address": "Dublin, Ireland"
+    }
+]
