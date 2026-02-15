@@ -1,19 +1,34 @@
 "use client"
-import { error } from "console";
-import React, { createContext, ReactNode, SetStateAction, useContext, useState } from "react";
+import { user } from "@/types/Type";
+import React, { createContext, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
 type AuthContextType = {
   userIsLogIn: boolean;
   setUserIsLogIn: React.Dispatch<SetStateAction<boolean>>
+  users: user[];
+  setUsers: React.Dispatch<SetStateAction<user[]>>;
+  currentUser: user | null;
+  setCurrentUser: React.Dispatch<SetStateAction<user | null>>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [userIsLogIn, setUserIsLogIn] = useState(true)
+  const [userIsLogIn, setUserIsLogIn] = useState(false)
+  const [users, setUsers] = useState<user[]>([])
+  const [currentUser, setCurrentUser] = useState<user | null>(null)
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const res = await fetch('/users.json')
+      const users = await res.json()
+      setUsers(users)
+    }
+    fetchUsers()
+  }, [])
 
   return (
-    <AuthContext.Provider value={{ userIsLogIn, setUserIsLogIn }}>
+    <AuthContext.Provider value={{ userIsLogIn, setUserIsLogIn, users, setUsers, currentUser, setCurrentUser}}>
       {children}
     </AuthContext.Provider>
   )
