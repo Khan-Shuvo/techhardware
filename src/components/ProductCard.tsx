@@ -64,7 +64,10 @@ export default function ProductCard({
                 {/* buttons */}
                 <div className="flex gap-2 pt-2 flex-wrap">
                     <button
-                        onClick={onAddToCart}
+                        onClick={e => {
+                            e.stopPropagation();
+                            onAddToCart?.();
+                        }}
                         className="flex-1 flex items-center justify-center gap-2 bg-black text-white rounded-xl py-2 hover:bg-zinc-800 transition"
                     >
                         <ShoppingCart size={18} />
