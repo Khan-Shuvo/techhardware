@@ -4,6 +4,7 @@ import { useMemo, useState } from "react"
 import { useProducts } from "@/context/ProductContext"
 import ProductCard from "../ProductCard"
 import FilterSidebar from "./FilterSidebar"
+import { useCart } from "@/context/CartContext"
 
 type Props = {
   category: string
@@ -11,6 +12,7 @@ type Props = {
 
 export default function DisplayProduct({ category }: Props) {
   const { allProduct } = useProducts()
+  const {addToCart} = useCart()
 
   const [selectedCategory, setSelectedCategory] = useState(category)
   const [selectedBrands, setSelectedBrands] = useState<string[]>([])
@@ -86,7 +88,7 @@ export default function DisplayProduct({ category }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
-            <ProductCard key={product.id} {...product} />
+            <ProductCard key={product.id} {...product} onAddToCart={() => addToCart(product)} />
           ))
         ) : (
           <p className="col-span-full text-center text-gray-500 dark:text-gray-300 mt-10">
