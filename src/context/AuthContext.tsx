@@ -25,10 +25,27 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setUsers(users)
     }
     fetchUsers()
+
+    const storedUser = localStorage.getItem('user')
+    if (storedUser) {
+      const parsedUser = JSON.parse(storedUser)
+      setCurrentUser(parsedUser)
+      setUserIsLogIn(true)
+    }
   }, [])
 
+  useEffect(() => {
+    if(currentUser){
+      localStorage.setItem('user', JSON.stringify(currentUser))
+      setUserIsLogIn(true)
+    }else{
+      localStorage.removeItem('user')
+      setUserIsLogIn(false)
+    }
+  },[currentUser])
+
   return (
-    <AuthContext.Provider value={{ userIsLogIn, setUserIsLogIn, users, setUsers, currentUser, setCurrentUser}}>
+    <AuthContext.Provider value={{ userIsLogIn, setUserIsLogIn, users, setUsers, currentUser, setCurrentUser }}>
       {children}
     </AuthContext.Provider>
   )
