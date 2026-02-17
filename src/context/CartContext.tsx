@@ -8,6 +8,7 @@ type CartItems = Product & { quantity: number }
 type CartContextProps = {
     cart: CartItems[];
     addToCart: (product: Product) => void
+    updateQuantity: (productid: string, newQuantity: number) => void
 }
 
 const CartContext = createContext<CartContextProps | undefined>(undefined)
@@ -29,8 +30,15 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         })
         alert(`${product.name} added to Cart!`)
     }
+
+    const updateQuantity = (productId: string, newQuantity: number) => {
+        if(newQuantity <= 0){
+            removeFromCart(productId)
+        }
+        setCart(prev => prev.map((item) => item.id == productId ? {...item, quantity: newQuantity} : item ))
+    }
     return (
-        <CartContext.Provider value={{ cart, addToCart }}>
+        <CartContext.Provider value={{ cart, addToCart, updateQuantity }}>
             {children}
         </CartContext.Provider>
     )
