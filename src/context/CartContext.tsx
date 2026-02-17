@@ -41,7 +41,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     }
 
     const removeFromCart = (productId: string) => {
-        setCart(prev => prev.filter(item => item.id === productId))
+        setCart(prev => prev.filter(item => item.id !== productId))
     }
 
     const totalPrice = () => {
