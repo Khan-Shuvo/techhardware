@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 export default function page() {
-  const { cart } = useCart()
+  const { cart, updateQuantity, totalPrice, removeFromCart } = useCart()
   const router = useRouter()
 
   if (cart.length === 0) {
@@ -58,18 +58,23 @@ export default function page() {
                         ${item.price}
                       </p>
                     </div>
-                    <button className='hover:text-red-500 transition-colors'>
+                    <button
+                    onClick={() => removeFromCart(item.id)} className='hover:text-red-500 transition-colors'>
                       <Trash2 className='w-5 h-5' />
                     </button>
                   </div>
                   <div className='flex items-center space-x-3 mt-4'>
-                    <button className='w-8 h-8 rounded bg-neutral-200 hover:bg-neutral-300 flex items-center justify-center'>
+                    <button
+                    onClick={() => updateQuantity(item.id, item.quantity - 1)} 
+                    className='w-8 h-8 rounded bg-neutral-200 hover:bg-neutral-300 flex items-center justify-center'>
                       -
                     </button>
                     <span className='text-neutral-900 font-medium w-8 text-center'>
                       {item.quantity}
                     </span>
-                    <button className='w-8 h-8 rounded bg-neutral-200 hover:bg-neutral-300 flex items-center justify-center'>
+                    <button
+                    onClick={() =>updateQuantity(item.id, item.quantity + 1) } 
+                    className='w-8 h-8 rounded bg-neutral-200 hover:bg-neutral-300 flex items-center justify-center'>
                       +
                     </button>
                   </div>
@@ -84,7 +89,7 @@ export default function page() {
               <div className='space-y-3 mb-6'>
                 <div className='flex justify-between teneu600 '>
                   <span> Subtotal </span>
-                  <span> 'subtotal price' </span>
+                  <span> ${totalPrice().toFixed(2)} </span>
                 </div>
                 <div className='flex justify-between text-neutral-600'>
                     <span>Shipping</span>
@@ -92,11 +97,11 @@ export default function page() {
                 </div>
                 <div className='flex justify-between text-neutral-600'>
                   <span>Tax</span>
-                  <span>'Taxt price'</span>  
+                  <span>${(totalPrice()*0.1).toFixed(2)}</span>  
                 </div>
                 <div className='border-t border-neutral-200 flex justify-between text-lg font-bold '>
                   <span>Total</span>
-                  <span>'Total price'</span>
+                  <span>${(totalPrice()*1.1).toFixed(2)}</span>
                 </div>
               </div>
               <button className='w-full bg-neutral-900 text-white py-4 rounded-lg font-medium hover:bg-neutral-800 transition-colors mb-4'>
