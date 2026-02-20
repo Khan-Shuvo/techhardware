@@ -12,7 +12,7 @@ export default async function ShopPage({ searchParams }: Props) {
 
 
   return (
-    <div className="py-4 px-3">
+    <div className="py-4 px-3 dark:bg-black dark:text-white">
       <DisplayProduct category={category} />
     </div>
   )

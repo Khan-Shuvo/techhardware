@@ -27,7 +27,7 @@ export default function ProductDetails({
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8 dark:bg-black dark:text-white">
 
       <button
         onClick={() => router.back()}
@@ -87,7 +87,7 @@ export default function ProductDetails({
 
           {/* add to cart */}
           <button
-            className="w-full md:w-auto flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-zinc-800 transition"
+            className="w-full md:w-auto flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black px-6 py-3 rounded-xl hover:bg-zinc-800 dark:hover:text-white transition"
           >
             <ShoppingCart size={18} />
             Add to Cart

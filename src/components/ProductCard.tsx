@@ -20,7 +20,7 @@ export default function ProductCard({
     const router = useRouter()
 
     return (
-        <div className="group relative w-full max-w-70 sm:max-w-60 md:max-w-70 rounded-2xl border bg-white dark:bg-zinc-900 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div className="group relative w-full max-w-70 sm:max-w-60 md:max-w-70 rounded-2xl border bg-white dark:bg-zinc-900 dark:text-white shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
 
             {/* -------- Image Section -------- */}
             <div className="relative w-full h-64 sm:h-56 md:h-64">
@@ -68,7 +68,7 @@ export default function ProductCard({
                             e.stopPropagation();
                             onAddToCart?.();
                         }}
-                        className="flex-1 flex items-center justify-center gap-2 bg-black text-white rounded-xl py-2 hover:bg-zinc-800 transition"
+                        className="flex-1 flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black rounded-xl py-2 hover:bg-zinc-800 hover:text-white transition"
                     >
                         <ShoppingCart size={18} />
                         Add to Cart

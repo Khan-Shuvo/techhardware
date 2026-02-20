@@ -29,14 +29,14 @@ export default function page() {
   }
 
   return (
-    <div className='min-h-screen py-12'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h1 className='text-4xl font-bold text-neutral-900'>
+    <div className='min-h-screen py-12 dark:bg-black'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2'>
+        <h1 className='text-4xl font-bold text-neutral-900 dark:text-white'>
           Shopping Cart
         </h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-          <div className='md:col-span-2 space-y-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 py-2'>
+          <div className='md:col-span-2 space-y-4 border border-solid border-black dark:border-gray-400 rounded-xl'>
             {cart.map((item, index) => (
               <div
                 key={item.id}
@@ -51,15 +51,15 @@ export default function page() {
                 <div className='flex-1'>
                   <div className='flex justify-between'>
                     <div>
-                      <h3 className='text-lg font-semibold text-neutral-900'>
+                      <h3 className='text-lg font-semibold text-neutral-900 dark:text-white'>
                         {item.name}
                       </h3>
-                      <p className='text-lg font-bold text-neutral-900'>
+                      <p className='text-lg font-bold text-neutral-900 dark:text-white'>
                         ${item.price}
                       </p>
                     </div>
                     <button
-                    onClick={() => removeFromCart(item.id)} className='hover:text-red-500 transition-colors'>
+                    onClick={() => removeFromCart(item.id)} className='hover:text-red-500 transition-colors dark:text-white'>
                       <Trash2 className='w-5 h-5' />
                     </button>
                   </div>
@@ -69,7 +69,7 @@ export default function page() {
                     className='w-8 h-8 rounded bg-neutral-200 hover:bg-neutral-300 flex items-center justify-center'>
                       -
                     </button>
-                    <span className='text-neutral-900 font-medium w-8 text-center'>
+                    <span className='text-neutral-900 dark:text-white font-medium w-8 text-center'>
                       {item.quantity}
                     </span>
                     <button
@@ -84,18 +84,18 @@ export default function page() {
           </div>
 
           <div className='md:col-span-1'>
-            <div className='bg-neutral-50 rounded-lg p-6 sticky top-24'>
-              <h2 className='text-xl font-bold text-neutral-900 mb-6'>Order Summary</h2>
+            <div className='bg-neutral-50 dark:bg-black dark:text-white border dark:border-gray-400  rounded-lg p-6 sticky top-24'>
+              <h2 className='text-xl font-bold text-neutral-900 dark:text-white mb-6'>Order Summary</h2>
               <div className='space-y-3 mb-6'>
                 <div className='flex justify-between teneu600 '>
                   <span> Subtotal </span>
                   <span> ${totalPrice().toFixed(2)} </span>
                 </div>
-                <div className='flex justify-between text-neutral-600'>
+                <div className='flex justify-between text-neutral-600 dark:text-white'>
                     <span>Shipping</span>
                     <span>Free</span>
                 </div>
-                <div className='flex justify-between text-neutral-600'>
+                <div className='flex justify-between text-neutral-600 dark:text-white'>
                   <span>Tax</span>
                   <span>${(totalPrice()*0.1).toFixed(2)}</span>  
                 </div>

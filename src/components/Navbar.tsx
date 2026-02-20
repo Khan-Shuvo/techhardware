@@ -62,7 +62,7 @@ export default function Navbar() {
 
           {userIsLogIn ? (
             <>
-              <Link href="/profile" className="px-3 py-2">
+              <Link href="/profile" className="px-3 py-2 dark:text-white">
                 <User size={18} />
               </Link>
 

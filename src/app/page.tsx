@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="pb-16">
+    <main>
       {/* hero section  */}
       <section className="w-full bg-linear-to-r from-gray-200 to-white dark:bg-linear-to-r dark:from-black/60 dark:to-black">
         <div className="max-w-7xl mx-auto px-6 py-24 sm:py-32 lg:px-12">
@@ -88,7 +88,7 @@ export default function Home() {
 
       
       {/* Fetured section  */}
-      <section className="max-w-7xl mx-auto px-4">
+      <section className="max-w-7xl mx-auto px-4 dark:bg-black dark:text-white">
         <div className="flex items-center justify-between mb-10">
           <div>
             <h2 className="text-3xl font-bold mb-2">Featured Products</h2>
