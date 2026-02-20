@@ -2,6 +2,7 @@
 import { Product } from "@/types/Type";
 import { createContext, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 import { useAuthContext } from "./AuthContext";
+import toast from "react-hot-toast";
 
 type CartItems = Product & { quantity: number }
 
@@ -42,15 +43,22 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
     const addToCart = (product: Product) => {
         if (!userIsLogIn) {
-            alert("please login firts to add items to cart!")
+            toast.error("please login firt to add items to cart!")
             return
         }
+        const isExits = cart.find(item => item.id === product.id)
         setCart((prev) => {
-            const isExits = prev.find(item => item.id === product.id)
-            if (isExits) return prev.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)
+            if (isExits){ 
+                return prev.map(item => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)
+            }
             return [...prev, { ...product, quantity: 1 }]
         })
-        alert(`${product.name} added to Cart!`)
+        if(isExits){
+            toast.success(`Increased quantity of ${product.name}`)
+        } else{
+            toast.success(`Added ${product.name} to your cart`)
+        }
+        
     }
 
     const updateQuantity = (productId: string, newQuantity: number) => {
@@ -62,6 +70,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
     const removeFromCart = (productId: string) => {
         setCart(prev => prev.filter(item => item.id !== productId))
+        toast.success(`Reomed Item from Cart `)
     }
 
     const totalPrice = () => {
