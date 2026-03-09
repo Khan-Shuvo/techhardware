@@ -133,7 +133,8 @@ export default function Navbar() {
               </button>
             </>
           ) : (
-            <button className="flex gap-2 px-3 py-2 bg-black text-white rounded-lg">
+            <button
+            onClick={() => router.push('/signin')} className="flex gap-2 px-3 py-2 bg-black text-white rounded-lg">
               <LogIn size={18} />
               Login
             </button>
