@@ -17,6 +17,7 @@ import {
 import { useAuthContext } from "@/context/AuthContext";
 import { useTheme } from "@/context/ThemeContext";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -81,12 +82,14 @@ export default function Navbar() {
         </div>
 
         {/* ✅ Mobile Toggle Button */}
-        <button
+        <motion.button 
+          animate={{rotate: isOpen ? 180 : 0}}
+          transition={{duration: .3}}
           className="md:hidden p-2 rounded-lg dark:text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
-        </button>
+        </motion.button>
 
         {/* Theme */}
         <button
@@ -98,7 +101,11 @@ export default function Navbar() {
 
       {/* ✅ Mobile Menu */}
       {isOpen && (
-        <div className=" absolute top-full right-0 z-50 md:hidden mt-3 flex flex-col gap-2 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
+        <motion.div
+        initial={{opacity: 0, y: -20, scale: .95}}
+        animate={{ opacity: 1, y: 0, scale:1, transition:{ duration: .3}}}
+        exit={{ opacity: 0, y: -20, scale: .95, transition: {duration: .3}}}
+        className=" absolute top-full right-0 z-50 md:hidden mt-3 flex flex-col gap-2 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
 
           {navLinks.map((link) => {
             const Icon = link.icon;
@@ -139,7 +146,7 @@ export default function Navbar() {
               Login
             </button>
           )}
-        </div>
+        </motion.div>
       )}
     </nav>
   );
